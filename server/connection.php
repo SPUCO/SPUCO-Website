@@ -1,4 +1,4 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', '','spuco_database')
+$conn = mysqli_connect('localhost', 'root', '','spucodatabase')
         or die("couldn't connect to database");
 ?>
