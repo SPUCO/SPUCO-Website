@@ -39,13 +39,17 @@ h4{
 
 .col-3{
     flex-basis: 30%;
-    min-width: 250px;
+    
     margin-bottom: 30px;
+    border-radius: 2%;
 }
 
-.col-3 img{
-    width: 100%;
+.exec_pics{
+
+    border-radius: 5%;
+
 }
+
 
 .col-4{
     flex-basis: 25%;
@@ -80,6 +84,8 @@ h4{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+   
+
 }
 
 .row{
@@ -173,20 +179,57 @@ nav ul li{
     margin: -5px;
 }
 
-/*--------- offer ---------*/
-.offer{
-    background: whitesmoke;
-    margin-top: 80px;
-    padding: 30px 0;
+/*--------- Navbar ---------*/
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(128,128,128,0.9); /* 90% transparent grey */
+    height: 3cm; /* 3 cm in height */
+    z-index: 9999; /* Ensures the navbar is on top */
 }
 
-.col-2 .offer-img{
-    padding: 50px;
+.navbar a {
+    float: right;
+    padding: 0.8cm;
+    color: white;
+    text-decoration: none;
 }
 
-small{
-    color: #555;
+.navbar a:hover {
+    border-bottom: 0.5px solid white;
 }
+
+.navbar .active {
+    border-bottom: 0.5px solid white;
+}
+
+.logo1 {
+    width: 2.6cm;
+    height: 2.6cm;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0);  
+  }
+
+ .small-container1 {
+    
+ }
+
+ .exe{
+    align-items: baseline;
+    
+ }
+
+ .exeimg{
+    width: 5cm;
+    height: 5cm;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+ }
+
+ .backimage{
+    background: linear-gradient(to bottom, #6DB5F7 50%, #fff 50%);
+ }
 
 /*---------featured categories-------*/
 .categories .col-3 img{
@@ -347,158 +390,6 @@ ul{
 
 .copyright{
     text-align: center;
-}
-
-/*----------all products page ------------*/
-#searchtype{
-    font-family: Verdana;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-.searchprice{
-    background: #fcfcfc;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 15px 40px #7E6D5766;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 20px;
-    padding: 20px;
-    padding-left: 40px;
-} 
-
-.searchbtn{
-    color: #fff;
-    display: flex;
-    box-shadow: 0px 15px 40px #7E6D5766;
-    background-color: rgb(62, 62, 221);
-    font-family: Geneva;
-    font-size: 19px;
-    font-weight: bold;
-    border: solid #fff;
-    border-width: 5px;
-    border-radius: 30px;
-    width: fit-content;
-    height: fit-content;		
-    padding: 10px;
-}
-
-.searchbtn:hover{
-    background-color: grey;
-}
-
-#search{
-    width: 20%;
-    height: 20%;
-    font-size: 12px;
-    float: left;
-    margin-left: 15px;
-}
-
-.displayallproducts{
-    flex-basis: 25%;
-    padding: 10px;
-    min-width: 200px;
-    transition: transform 0.5s;
-}
-
-.displayallproducts img{
-    width: 100%;
-    height: 50%;
-}
-
-.displayallproducts p{
-    font-size: 14px;
-}
-
-.displayallproducts:hover{
-    transform: translate(-5px);
-}
-
-.rating .fa{
-    color: orange;
-}
-
-.page-btn{
-    margin: 0 auto 80px;
-    margin-left: 320px;
-    margin-top: 60px;
-    margin-bottom: 750px;
-}
-
-.page-btn span{
-    display: inline-block;
-    border: 1px solid #ff523b;
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-}
-
-.page-btn span:hover{
-    background: #ff523b;
-    color: #fff;
-}
-
-.page-btn1 span:hover{
-    color: blue;
-}
-
-/*---------single product details---------*/
-.row-2{
-    justify-content: space-between;
-    margin: 100px auto 50px;
-}
-
-.single-product{
-    margin-top: 80px;
-}
-
-.single-product .col-2 img{
-    padding: 0;
-}
-.single-product .col-2{
-    padding: 20px;
-}
-.single-product h4{
-    margin: 20px 0;
-    font-size: 22px;
-    font-weight: bold;
-}
-.single-product select{
-    display: block;
-    padding: 10px;
-    margin-top: 20px;
-}
-.single-product input{
-    width: 50px;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 20px;
-    margin-right: 10px;
-    border: 1px solid #ff523b;
-}
-input:focus{
-    outline: none;
-}
-.single-product .fa{
-    color: #ff523b;
-    margin-left: 10px;
-}
-.small-img-row{
-    display: flex;
-    justify-content: space-between;
-}
-.small-img-col{
-    flex-basis: 24%;
-    cursor: pointer;
-}
-
-.reviewdisplaycontainer{
-    font-size: small
 }
 
 /*----------login-page------------*/
@@ -702,190 +593,24 @@ form a{
     width: 98vw;
 }
 
-/*----------Orders Page--------*/
-.orders table{
-    font-size: auto;
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.orders .productinfo{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.orders th{
-    padding: 5px 20px;
-    color: #fff;
-    background-color: #ff523b;
-    text-align: center;
-}
-
-.orders th:nth-child(2){
-    text-align: center;
-}
-
-.orders td{
-    padding: 10px 20px;
-    text-align: center;
-}
-
-.orders td img{
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-}
-
-.orders #accountbottomspace{
-    margin-top: 50px;
-    margin-bottom: 200px;
-}
-
-/*----------Orders Details page--------*/
-.orderdetails table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.orderdetails .productinfo{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.orderdetails th{
-    padding: 5px 20px;
-    color: #fff;
-    background-color: #ff523b;
-    text-align: center;
-}
-
-.orderdetails th:nth-child(2){
-    text-align: center;
-}
-
-.orderdetails td{
-    padding: 10px 20px;
-    text-align: center;
-}
-
-.orderdetails td img{
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-}
-
-.orderdetails input{
-    background-color: rgb(62, 62, 221);
-    float: right;
-    padding: 10px;
-    width: fit-content;
-    border-radius: 30px;
-    transition: background 0.5s;
-}
-
-.orderdetails input:hover{
-    background-color: grey;
-}
-
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer{
-    margin-top: 40px;
-    font-family: Verdana;
-    font-size: large;
-    font-style: oblique;
-    font-weight: bold;
-}
-
-.realtimetrackingstatuscontainer input{
-    margin-left: 155px;
-}
-
-/*---------- media query for less than 1300 screen size --------*/
-@media only screen and (max-width: 1300px){
-/*---------- All Products Page --------*/
-.searchprice{
-    width: 180px;
-    height: 50px;
-    padding: 12px;
-    padding-left: 20px;
-    background: #fcfcfc;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 15px 40px #7E6D5766;
-} 
-
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer input{
-    margin-left: 140px;
-}
-}
-
 /*---------- media query for less than 1100 screen size --------*/
 @media only screen and (max-width: 1100px){
-/*---------- All Products Page --------*/
-.searchprice{
-width: 180px;
-height: 50px;
-padding: 12px;
-padding-left: 20px;
-background: #fcfcfc;
-border-radius: 20px;
-display: flex;
-align-items: center;
-box-shadow: 0px 15px 40px #7E6D5766;
-}
 
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer input{
-    margin-left: 85px;
-}
 }
 
 /*---------- media query for less than 1000 screen size --------*/
 @media only screen and (max-width: 1000px){
-/*---------- All Products Page --------*/
-.searchprice{
-width: 180px;
-height: 50px;
-padding: 12px;
-padding-left: 20px;
-background: #fcfcfc;
-border-radius: 20px;
-display: flex;
-align-items: center;
-box-shadow: 0px 15px 40px #7E6D5766;
-}
 
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer input{
-margin-left: 70px;
-}
 }
 
 /*---------- media query for less than 900 screen size --------*/
 @media only screen and (max-width: 900px){
-/*---------- All Products Page --------*/
-.searchprice{
-width: 180px;
-height: 50px;
-padding: 12px;
-padding-left: 20px;
-background: #fcfcfc;
-border-radius: 20px;
-display: flex;
-align-items: center;
-box-shadow: 0px 15px 40px #7E6D5766;
-}
 
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer input{
-margin-left: 50px;
-}
 }
 
 /*---------- media query for less than 800 screen size --------*/
 @media only screen and (max-width: 800px){
+/*---------- Header --------*/
 nav ul{
     position: absolute;
     top: 70px;
@@ -910,24 +635,6 @@ nav ul li a{
     display: block;
     cursor: pointer;
 }
-
-/*---------- All Products Page --------*/
-.searchprice{
-width: 180px;
-height: 50px;
-padding: 12px;
-padding-left: 20px;
-background: #fcfcfc;
-border-radius: 20px;
-display: flex;
-align-items: center;
-box-shadow: 0px 15px 40px #7E6D5766;
-}
-
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer input{
-    margin-left: 40px;
-}
 }
 
 /*-------media query for less than 600 screen size----*/
@@ -939,73 +646,12 @@ box-shadow: 0px 15px 40px #7E6D5766;
     flex-basis: 100%;
 }
 
-/*----------single products------------*/
-.single-product .row{
-    text-align: left;
-}
-.single-product .col-2{
-    padding: 20px 0;
-}
-.single-product h1{
-    font-size: 26px;
-    line-height: 32px;
-}
-
-/*----------all products------------*/
-#searchtype{
-    margin-left: 10px;
-    font-family: Verdana;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-.searchprice{
-    width: 160px;
-    height: 50px;
-    padding: 12px;
-    padding-left: 20px;
-    background: #fcfcfc;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 15px 40px #7E6D5766;
-}
-
-.displayallproducts{
-    flex-basis: 25%;
-    padding: 10px;
-    min-width: 175px;
-    transition: transform 0.5s;
-}
-
-.page-btn{
-    margin: 0 auto 80px;
-    margin-left: 185px;
-    margin-top: 150px;
-    margin-bottom: 850px;
-}
-
-.page-btn span{
-    display: inline-block;
-    border: 1px solid #ff523b;
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-}
-
 /*----------Login Page--------*/
 .formcontainer{
 width: 50vw;
 }
+}
 
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer input{
-    margin-left: 90px;
-}
-}
 /*-------media query for less than 500 screen size----*/
 @media only screen and (max-width: 500px){
 /*---------- About Page ------------*/
@@ -1013,33 +659,11 @@ width: 50vw;
     width: 380px;
     height: 340px;
 }
-
-/*---------- All Products Page --------*/
-.searchprice{
-width: 120px;
-height: 50px;
-padding: 12px;
-padding-left: 20px;
-background: #fcfcfc;
-border-radius: 20px;
-display: flex;
-align-items: center;
-box-shadow: 0px 15px 40px #7E6D5766;
-}
-
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer input{
-    margin-left: 40px;
-}
-
 }
 
 /*-------media query for less than 450 screen size----*/
 @media only screen and (max-width: 450px){
-/*---------- Product Details Page --------*/
-.reviewdisplaycontainer{
-font-size: x-small;
-}
+
 }
 
 /*-------media query for less than 400 screen size----*/
@@ -1050,32 +674,10 @@ font-size: x-small;
     height: 260px;
 }
 
-/*---------- All Products Page --------*/
-.searchprice{
-width: 110px;
-height: 50px;
-padding: 12px;
-padding-left: 20px;
-background: #fcfcfc;
-border-radius: 20px;
-display: flex;
-align-items: center;
-box-shadow: 0px 15px 40px #7E6D5766;
-}
-.searchbtn{
-font-size: 10px;
-}
-
 /*----------Login Page--------*/
 .formcontainer{
 width: 70vw;
 }
-
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer input{
-margin-left: 35px;
-}
-
 }
 
 /*-------media query for less than 350 screen size----*/
@@ -1084,11 +686,6 @@ margin-left: 35px;
 .header .logo{
     width: 75px;
     height: 37.5px;
-}
-
-/*---------- Product Details Page --------*/
-.reviewdisplaycontainer{
-    font-size: xx-small;
 }
 }
 
@@ -1315,94 +912,6 @@ nav{
     margin: 20px 0;
 }
 
-/*----------all products------------*/
-#searchtype{
-    margin-left: 12px;
-    font-size: 11px;
-}
-
-.searchprice{
-    width: 117px;
-    height: 12px;
-    padding: 12px;
-    padding-left: 20px;
-}
-
-.displayallproducts{
-    min-width: 140px;
-}
-
-.page-btn{
-    margin: 0 auto 80px;
-    margin-left: 105px;
-    margin-top: 50px;
-    margin-bottom: 850px;
-}
-
-.page-btn span{
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-}
-
-/*---------single product details---------*/
-.row-2{
-    justify-content: space-between;
-    margin: 100px auto 50px;
-}
-
-.single-product{
-    margin-top: 80px;
-}
-
-.single-product .col-2 img{
-    padding: 0;
-}
-.single-product .col-2{
-    padding: 20px;
-}
-.single-product h4{
-    margin: 20px 0;
-    font-size: 22px;
-    font-weight: bold;
-}
-.single-product select{
-    display: block;
-    padding: 10px;
-    margin-top: 20px;
-}
-.single-product input{
-    width: 50px;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 20px;
-    margin-right: 10px;
-}
-input:focus{
-    outline: none;
-}
-.single-product .fa{
-    margin-left: 10px;
-}
-.small-img-row{
-    display: flex;
-    justify-content: space-between;
-}
-.small-img-col{
-    flex-basis: 24%;
-}
-
-#addtocartbtn{
-    width: 75%;
-    padding: 10px;
-}
-
-#buynowbtn{
-    width: 75%;
-    padding: 10px;
-}
-
 /*----------login-page------------*/
 .loginpage{
     padding: 50px 0;
@@ -1460,56 +969,6 @@ form a{
     padding: 0px;
     margin-right: -140px;
 }
-
-/*----------Orders page--------*/
-.orders table{
-    font-size: auto;
-    width: 100%;
-}
-
-.orders th{
-    padding: 5px 20px;
-}
-
-.orders td{
-    padding: 10px 20px;
-}
-
-.orders td img{
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-}
-
-.orders #accountbottomspace{
-    margin-top: 50px;
-    margin-bottom: 200px;
-}
-
-/*----------Orders Details page--------*/
-.orderdetails table{
-    width: 100%;
-}
-
-.orderdetails th{
-    padding: 5px 20px;
-}
-
-.orderdetails td{
-    padding: 10px 20px;
-}
-
-.orderdetails td img{
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-}
-
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer input{
-    margin-left: 75px;
-}
-
 }
 
 /*-------media query for less than 280 screen size----*/
@@ -1606,19 +1065,6 @@ nav ul li{
     height: 210px;
 }
 
-/*---------- All Products Page --------*/
-.searchprice{
-    width: 110px;
-    height: 12px;
-    padding: 12px;
-    padding-left: 20px;
-    background: #fcfcfc;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 15px 40px #7E6D5766;
-}
-
 /*----------login-page------------*/
 .loginpage{
     padding: 50px 0;
@@ -1634,11 +1080,6 @@ nav ul li{
 #registration-btn:focus{
     outline: none;
 }
-
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer input{
-    margin-left: 75px;
-}	
 }
 
 /*-------media query for less than 260 screen size----*/
@@ -1730,19 +1171,6 @@ width: 250px;
 height: 210px;
 }
 
-/*---------- All Products Page --------*/
-.searchprice{
-    width: 100px;
-    height: 12px;
-    padding: 12px;
-    padding-left: 20px;
-    background: #fcfcfc;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 15px 40px #7E6D5766;
-}
-
 /*----------login-page------------*/
 .loginpage{
     padding: 50px 0;
@@ -1763,12 +1191,6 @@ height: 210px;
 #registration-btn:focus{
     outline: none;
 }
-    
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer input{
-  margin-left: 75px;
-}
-
 }
 
 /*-------media query for less than 240 screen size----*/
@@ -1865,19 +1287,6 @@ margin: -5px;
     height: 200px;
 }
 
-/*---------- All Products Page --------*/
-.searchprice{
-    width: 90px;
-    height: 12px;
-    padding: 12px;
-    padding-left: 20px;
-    background: #fcfcfc;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 15px 40px #7E6D5766;
-}
-
 /*----------login-page------------*/
 .loginpage{
     padding: 50px 0;
@@ -1907,10 +1316,4 @@ form a{
 #registration-btn{
     width: 110px;
 }
-
-/*---------- Track Order Page --------*/
-.realtimetrackingstatuscontainer input{
-    margin-left: 75px;
-}
-
 }
