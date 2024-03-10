@@ -1,23 +1,6 @@
 <?php
 include('layouts/header.php');
-?>
-  </div>
-</div>
-
-<!-- Navbar -->
-<div class="container">
-	<div class="row"> 
-		<div class="navbar">
-			<img src="assets/images/spuco images/spuco_logo_no.png" alt="Logo1" class="logo1">
-			
-			<a href="index.php">Home</a>
-			<a class="active" href="about.php">About Us</a>
-			<a href="contact.php">Contact Us</a>
-			<a href="#">Events & Competitions</a>
-			<a href="#">Membership</a>
-		</div>
-	</div>
-</div> 
+?> 
 
 <!--------- About page ------------>
 <div class="container">
@@ -34,47 +17,47 @@ include('layouts/header.php');
 	    <div class="container"> 
 		    <div class="row">
 				<div class="exe">
-				<img class="exeimg" src="assets/images/executive pics/President-Co Founder ( Awande Ayanda Gumbi) BSc Biological Sciences.jpg">
+				<img class="exeimg" src="assets/images/President-Co Founder ( Awande Ayanda Gumbi) BSc Biological Sciences.jpg">
 				<p>President&Co-founder</p>
 				</div>
 
 				<div class="exe">
-				<img class="exeimg" src="assets/images/executive pics/Deputy President( Kay Mudau) BscHons Computer Science.jpg">
+				<img class="exeimg" src="assets/images/Deputy President( Kay Mudau) BscHons Computer Science.jpg">
 				<p>Deputy President</p>
 				</div>
 
 				<div class="exe">
-				<img class="exeimg" src="assets/images/executive pics/Secretary General ( Rethabile Binang) ICT.jpg">
+				<img class="exeimg" src="assets/images/Secretary General ( Rethabile Binang) ICT.jpg">
 				<p>Secretary General</p>
 				</div>
 
 				<div class="exe">
-				<img class="exeimg" src="assets/images/executive pics/">
+				<img class="exeimg" src="assets/images/">
 				<p>Treasurer</p>
 				</div>
 
 				<div class="exe">
-				<img class="exeimg" src="assets/images/executive pics/WebSoftware Developer(Zwelibanzi Langeni) Bsc Mathematical and Computer Science.jpg">
+				<img class="exeimg" src="assets/images/WebSoftware Developer(Zwelibanzi Langeni) Bsc Mathematical and Computer Science.jpg">
 				<p>Web/Software Developer</p>
 				</div>
 
 				<div class="exe">
-				<img class="exeimg" src="assets/images/executive pics/Legal, Policy and Constitutional Affairs Officer ( Koketso Jampane ) ICT.jpg">
+				<img class="exeimg" src="assets/images/Legal, Policy and Constitutional Affairs Officer ( Koketso Jampane ) ICT.jpg">
 				<p>Legal & Policy Officer</p>
 				</div>
 
 				<div class="exe">
-				<img class="exeimg" src="assets/images/executive pics/Mentorship Coordinator & Outreach Coordinator ( Vanessa Skosana) ICT.jpg">
+				<img class="exeimg" src="assets/images/Mentorship Coordinator & Outreach Coordinator ( Vanessa Skosana) ICT.jpg">
 				<p>Mentorship & Outreach Coordinator </p>
 				</div>
 
 				<div class="exe">
-				<img class="exeimg" src="assets/images/executive pics/">
+				<img class="exeimg" src="assets/images/">
 				<p>Event Coordinator</p>
 				</div>
 
 				<div class="exe">
-				<img class="exeimg" src="assets/images/executive pics/Marketing Coordinator(Gadifele Serame) ICT.jpg">
+				<img class="exeimg" src="assets/images/Marketing Coordinator(Gadifele Serame) ICT.jpg">
 				<p>Marketing Coordinator</p>
 				</div>
 

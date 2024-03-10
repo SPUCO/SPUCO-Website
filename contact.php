@@ -2,23 +2,6 @@
 include('layouts/header.php');
 include('server/getcontact.php');
 ?>
-  </div>
-</div>
-
-<!-- Navbar -->
-<div class="container">
-	<div class="row"> 
-		<div class="navbar">
-			<img src="assets/images/spuco images/spuco_logo_no.png" alt="Logo1" class="logo1">
-			
-			<a href="index.php">Home </a>
-			<a href="about.php">About Us</a>
-			<a class="active" href="contact.php">Contact Us</a>
-			<a href="#"> Events & Competitions</a>
-			<a href="#">Membership</a>
-		</div>
-	</div>
-</div>
   
 <!------------- Website Messages----------->
 <p style="color: red; font-weight: bold; text-align: center" class="text-center"><?php if(isset($_GET['error'])){ echo $_GET['error']; }?></p>

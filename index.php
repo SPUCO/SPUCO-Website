@@ -1,26 +1,10 @@
 <?php
 include('layouts/header.php');
 ?>
-  </div>
-</div>
+
 <!------------- Website Messages----------->
 <p style="color: red; font-weight: bold; text-align: center" class="text-center"><?php if(isset($_GET['error'])){ echo $_GET['error']; }?></p>
 <p style="color: green" class="text-center"><?php if(isset($_GET['message'])){ echo $_GET['message']; }?></p>
-
-<!-- Navbar -->
-<div class="container">
-	<div class="row"> 
-		<div class="navbar">
-			<img src="assets/images/spuco images/spuco_logo_no.png" alt="Logo1" class="logo1">
-			
-			<a class="active" href="index.php">Home</a>
-			<a href="about.php">About Us</a>
-			<a href="contact.php">Contact Us</a>
-			<a href="#">Events & Competitions</a>
-			<a href="#">Membership</a>
-		</div>
-	</div>
-</div>
 
 <!------------- Body Header ----------->
 <div class="container">
@@ -37,13 +21,13 @@ include('layouts/header.php');
 	<div class="small-container">
 		<div class="row">
 			<div class="col-3">
-				<img src="assets/images/gallery/coding_pics1.jpeg" alt="Snow" style="border-radius: 11%">
+				<img src="assets/images/coding_pics1.jpeg" alt="Snow" style="border-radius: 11%">
 			</div>
 			<div class="col-3">
-				<img src="assets/images/gallery/coding_pics2.jpg" alt="Snow" style="border-radius: 11%">
+				<img src="assets/images/coding_pics2.jpg" alt="Snow" style="border-radius: 11%">
 			</div>
 			<div class="col-3">
-				<img src="assets/images/gallery/coding_pics3.jpg" alt="Snow" style="border-radius: 11%">
+				<img src="assets/images/coding_pics3.jpg" alt="Snow" style="border-radius: 11%">
 			</div>
 		</div>
 	</div>
@@ -64,34 +48,34 @@ include('layouts/header.php');
     <div class="programming_languages">
 		<div class="row">
 			<div class="col-5">
-				<img src="assets/images/programming pics/html_pic.png" alt="Snow">
+				<img src="assets/images/html_pic.png" alt="Snow">
 			</div>
 			<div class="col-5">
-				<img src="assets/images/programming pics/css_pic.png" alt="Snow">
+				<img src="assets/images/css_pic.png" alt="Snow">
 			</div>
 			<div class="col-5">
-				<img src="assets/images/programming pics/javascript_pic.jpg" alt="Snow">
+				<img src="assets/images/javascript_pic.jpg" alt="Snow">
 			</div>
 			<div class="col-5">
-				<img src="assets/images/programming pics/php_pic.png" alt="Snow">
+				<img src="assets/images/php_pic.png" alt="Snow">
 			</div>
 			<div class="col-5">
-				<img src="assets/images/programming pics/sql_pic.png" alt="Snow">
+				<img src="assets/images/sql_pic.png" alt="Snow">
 			</div>
 			<div class="col-5">
-				<img src="assets/images/programming pics/python_pic.png" alt="Snow">
+				<img src="assets/images/python_pic.png" alt="Snow">
 			</div>
 			<div class="col-5">
-				<img src="assets/images/programming pics/java_pic.png" alt="Snow">
+				<img src="assets/images/java_pic.png" alt="Snow">
 			</div>
 			<div class="col-5">
-				<img src="assets/images/programming pics/c++_pic.jpg" alt="Snow">
+				<img src="assets/images/c++_pic.jpg" alt="Snow">
 			</div>
 			<div class="col-5">
-				<img src="assets/images/programming pics/csharp_pic.png" alt="Snow">
+				<img src="assets/images/csharp_pic.png" alt="Snow">
 			</div>
 			<div class="col-5">
-				<img src="assets/images/programming pics/github_pic.png" alt="Snow">
+				<img src="assets/images/github_pic.png" alt="Snow">
 			</div>
 		</div>
 	</div>
@@ -102,19 +86,19 @@ include('layouts/header.php');
 <div class="container">
     <div class="row">
 		<div class="col-5">
-			<img src="assets/images/partners pics/google_pic.png" alt="Snow">
+			<img src="assets/images/google_pic.png" alt="Snow">
 		</div>
 		<div class="col-5">
-			<img src="assets/images/partners pics/microsoft_pic.png" alt="Snow">
+			<img src="assets/images/microsoft_pic.png" alt="Snow">
 		</div>
 		<div class="col-5">
-			<img src="assets/images/partners pics/ibm_pic.jpg" alt="Snow">
+			<img src="assets/images/ibm_pic.jpg" alt="Snow">
 		</div>
 		<div class="col-5">
-			<img src="assets/images/partners pics/cisco_pic.png" alt="Snow">
+			<img src="assets/images/cisco_pic.png" alt="Snow">
 		</div>
 		<div class="col-5">
-			<img src="assets/images/partners pics/moodle_pic.png" alt="Snow">
+			<img src="assets/images/moodle_pic.png" alt="Snow">
 		</div>
 	</div>
 </div>
