@@ -3,7 +3,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="footer-col-2">
-						<img src="assets/images/spuco images/spuco_logo.jpg" alt="Snow" style="border-radius: 30%">
+						<img src="assets/images/spuco_logo.jpg" alt="Snow" style="border-radius: 30%">
 						<p class="footerlogoslogan">Teaching Students How To Code.</p>
 					</div>
 				</div>
