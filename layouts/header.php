@@ -18,15 +18,15 @@
 					<a href="index.php"><img src="assets/images/spuco_logo_no.png" class="logo1" alt="Snow"></a>
 						<nav>
 							<ul id="MenuItems">
-									<li id="nav-exit"style="visibility: collapse" onclick="menutoggle()" style="margin-right: 30px; color: black;">X</li>
-									<li><a href="index.php">Home</a></li>
-									<li><a href="about.php">About Us</a</li>
-									<li><a href="contact.php">Contact Us</a></li>
-									<li><a href="eventsandcompetitions.php">Events & Competitions</a></li>
-									<li><a href="index.php">Membership</a></li>
-								</form>
+								<li><a href="index.php">Home</a></li>
+								<li><a href="about.php">About Us</a</li>
+								<li><a href="contact.php">Contact Us</a></li>
+								<li><a href="index.php">Events & Competitions</a></li>
+								<li><a href="membershipaccount.php">Membership</a></li>
 							</ul>
 						</nav>
+						<!-- Menu icon -->
+					  <img src="assets/images/menu.png" alt="Snow" class="menu-icon" onclick="menutoggle()" align="center">
 			  </div>
 		  </div>
     </div>
@@ -34,9 +34,7 @@
 	<!----------js for toggle menu----------->
 	<script>
 		var MenuItems = document.getElementById("MenuItems");
-
 		MenuItems.style.maxHeight = "0px";
-
 		function menutoggle(){
 			if(MenuItems.style.maxHeight == "0px")
 			{
