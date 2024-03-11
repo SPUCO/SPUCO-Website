@@ -118,7 +118,7 @@ h4{
 /*------buttons design-------*/
 .btn{
     display: inline-block;
-    background: #ff523b;
+    background: green;
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
@@ -126,7 +126,7 @@ h4{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #563434;
+    background: #828670;
 }
 
 /*-------Header design-------*/
@@ -172,8 +172,9 @@ h4{
 }
 
 .navbar li a{
+    font-size: xx-small;
     float: right;
-    padding: 0.8cm;
+    padding: 0.4cm;
     color: white;
     text-decoration: none;
     background-color: rgba(128,128,128,0.9);
@@ -223,79 +224,6 @@ nav ul li{
     width: 290px;
     height: 170px;
     border-radius: 1px;
-}
-
-/*---------testimonial--------*/
-.testimonials table{
-    font-size: auto;
-    width: fit-content;
-    border-collapse: collapse;
-}
-
-.testimonials .productinfo{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.testimonials th{
-    padding: 5px 20px;
-    color: #fff;
-    background-color: grey;
-    text-align: center;
-}
-
-.testimonials th:nth-child(2){
-    text-align: center;
-}
-
-.testimonials td{
-    padding: 10px 20px;
-    text-align: center;
-}
-
-.testimonials td img{
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-}
-
-.testimonials #testimonialsbottomspace{
-    margin-bottom: 30px;
-}
-
-.testimonials .col-3{
-    text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: transform 0.5s;
-}
-
-.testimonials .col-3 img{
-    width: 50px;
-    margin-top: 20px;
-    border-radius: 50%;
-}
-
-.testimonials .col-3:hover{
-    transform: translate(-10px);
-}
-
-.fa.fa-quote-left{
-    font-size: 34px;
-    color: green;
-}
-
-.col-3 p{
-    font-size: 12px;
-    margin: 12px 0;
-    color: #777;
-}
-
-.testimonials .col-3 h3{
-    font-weight: 600;
-    color: #555;
-    font-size: 16px;
 }
 
 /*----------brands-----------*/
@@ -379,6 +307,50 @@ ul{
     text-align: center;
 }
 
+/*----------Contact Page--------*/
+.contactpagecontainer{
+    text-align: center;
+}
+
+.contactpage{
+    flex: wrap;
+    display: inline-block;
+    background-color: #cecdcd;
+    border: solid rgb(240, 240, 240);
+    height: fit-content;
+    width: 98.95vw;
+}
+
+.contactpage:hover{
+    border: solid rgb(182, 182, 182);
+}
+
+.submitcontactformbtn{
+    color: #fff;
+    background-color: #ff523b;
+    padding: 5px;
+    width: fit-content;
+    border: solid #979797;
+    border-radius: 10%;
+}
+
+.submitcontactformbtn:hover{
+    background-color: #fc7661;
+}
+
+.googlemapscontainer{
+    flex: wrap;
+    display: inline-block;
+    background-color: #FFFFFF;
+    border: solid rgb(240, 240, 240);
+    height: fit-content;
+    width: 98.95vw;
+}
+
+.googlemaps{
+    width: 98vw;
+}
+
 /*----------login-page------------*/
 .loginpage{
     padding: 50px 0;
@@ -429,7 +401,7 @@ form .btn:focus{
     margin: 5px auto;
     text-align: center;
     padding: 20px;
-    border-top: 1px solid #ff523b;
+    border-top: 1px solid green;
 }
 
 form a{
@@ -437,7 +409,7 @@ form a{
 }
 
 #loginform #registerurl,#forgotpasswordurl{
-    color: #ff523b;
+    color: green;
 }
 
 /*------Registration-page------*/
@@ -446,11 +418,11 @@ form a{
     margin: 5px auto;
     text-align: center;
     padding: 20px;
-    border-top: 1px solid #ff523b;
+    border-top: 1px solid green;
 }
 
 #registrationform #loginurl{
-    color: #ff523b;
+    color: green;
 }
 
 #registration-btn{
@@ -478,11 +450,11 @@ form a{
 
 #accountform #changepasswordbtn{
     color: #fff;
-    background-color: #ff523b;
+    background-color: green;
 }
 
 .accountinfo #ordersbtn,#logoutbtn{
-    color:#ff523b;
+    color:green;
     text-decoration: none;
 }
 
@@ -514,7 +486,7 @@ form a{
     color: white;
     padding: 10px;
     width: fit-content; 
-    background-color: rgb(250, 250, 14);
+    background-color: rgb(250, 200, 34);
     border: solid rgb(226, 218, 218); 
     border-radius: 10%;
 }
@@ -527,58 +499,15 @@ form a{
     color: white;
     padding: 10px;
     width: 20%; 
-    background-color: #f34f35;
+    background-color:green;
     border: solid rgb(226, 218, 218); 
     border-radius: 10%;
 }
 
 .editprofilebtn:hover{
-    background-color: #be5b4c;
+    background-color: #b1c24f;
 }
 
-/*----------Contact Page--------*/
-.contactpagecontainer{
-    text-align: center;
-}
-
-.contactpage{
-    flex: wrap;
-    display: inline-block;
-    background-color: #cecdcd;
-    border: solid rgb(240, 240, 240);
-    height: fit-content;
-    width: 98.95vw;
-}
-
-.contactpage:hover{
-    border: solid rgb(182, 182, 182);
-}
-
-.submitcontactformbtn{
-    color: #fff;
-    background-color: #ff523b;
-    padding: 5px;
-    width: fit-content;
-    border: solid #979797;
-    border-radius: 10%;
-}
-
-.submitcontactformbtn:hover{
-    background-color: #fc7661;
-}
-
-.googlemapscontainer{
-    flex: wrap;
-    display: inline-block;
-    background-color: #FFFFFF;
-    border: solid rgb(240, 240, 240);
-    height: fit-content;
-    width: 98.95vw;
-}
-
-.googlemaps{
-    width: 98vw;
-}
 
 /*---------- media query for less than 1100 screen size --------*/
 @media only screen and (max-width: 1100px){
@@ -598,6 +527,12 @@ form a{
 /*---------- media query for less than 800 screen size --------*/
 @media only screen and (max-width: 800px){
 /*---------- Header --------*/
+.navbar li a{
+    font-size: xx-small;
+    padding: 0.2cm;
+    border-radius: 0%;   
+}
+
 nav ul{
     position: absolute;
     top: 70px;
@@ -632,20 +567,11 @@ nav ul li a{
 .col-2, .col-3, .col-4{
     flex-basis: 100%;
 }
-
-/*----------Login Page--------*/
-.formcontainer{
-width: 50vw;
-}
 }
 
 /*-------media query for less than 500 screen size----*/
 @media only screen and (max-width: 500px){
-/*---------- About Page ------------*/
-.franceflag{
-    width: 380px;
-    height: 340px;
-}
+
 }
 
 /*-------media query for less than 450 screen size----*/
@@ -655,25 +581,12 @@ width: 50vw;
 
 /*-------media query for less than 400 screen size----*/
 @media only screen and (max-width: 400px){
-/*---------- About Page ------------*/
-.franceflag{
-    width: 300px;
-    height: 260px;
-}
 
-/*----------Login Page--------*/
-.formcontainer{
-width: 70vw;
-}
 }
 
 /*-------media query for less than 350 screen size----*/
 @media only screen and (max-width: 350px){
-/*-------Header design-------*/
-.header .logo{
-    width: 75px;
-    height: 37.5px;
-}
+
 }
 
 /*-------media query for less than 300 screen size----*/
@@ -755,24 +668,10 @@ width: 70vw;
 }
 
 /*-------Header design-------*/
-.header .logo{
-    width: 75px;
-    height: 37.5px;
-}
-
-#cart-pic{
-    right: 0%;
-}
-
 .menu-icon{
     width: 28px;
     margin-left: 20px;
     left: 0%;
-}
-
-.header .cartpic{
-    width: 20px;
-    height: 30px;
 }
 
 .header .row{
@@ -804,17 +703,7 @@ nav{
     transform: translate(-50%);
 }
 
-.cartquantity{
-    padding: 2px 5px;
-    border-radius: 50%;
-    margin: -5px;
-}
-
 /*---------- About Page ------------*/
-.franceflag{
-    width: 280px;
-    height: 240px;
-}
 
 /*--------- offer ---------*/
 .offer{
@@ -824,33 +713,6 @@ nav{
 
 .col-2 .offer-img{
     padding: 50px;
-}
-
-/*---------testimonial--------*/
-.testimonial{
-    padding-top: 100px;
-}
-
-.testimonial .col-3{
-    padding: 40px 20px;
-}
-
-.testimonial .col-3 img{
-    width: 50px;
-    margin-top: 20px;
-}
-
-.fa.fa-quote-left{
-    font-size: 34px;
-}
-
-.col-3 p{
-    font-size: 12px;
-    margin: 12px 0;
-}
-
-.testimonial .col-3 h3{
-    font-size: 16px;
 }
 
 /*----------brands-----------*/
@@ -898,88 +760,11 @@ nav{
     height: 1px;
     margin: 20px 0;
 }
-
-/*----------login-page------------*/
-.loginpage{
-    padding: 50px 0;
-}
-
-.formcontainer form{
-    padding: 0 20px;
-    top: 130px;
-}
-
-form input{
-    width: 50%;
-    margin: 5px auto;
-}
-
-form .btn{
-    width: 100%;
-    margin: 10px 0;
-}
-
-#loginform{
-    width: 100%;
-    margin: 5px auto;
-    padding: 20px;
-}
-
-form a{
-    font-size: 12px;
-}
-
-/*------Registration-page------*/
-#registrationform{
-    width: 50%;
-    margin: 5px auto;
-    padding: 20px;
-}
-
-/*----------Account-page--------*/
-#accountform{
-    width: 50%;
-    margin: 35px;
-    padding: 20px;
-}
-
-#accountform input{
-    margin: 5px auto;
-}
-
-#sub-container{
-    padding: 0px;
-    margin-right: 140px;
-}
-
-#account-page{
-    padding: 0px;
-    margin-right: -140px;
-}
 }
 
 /*-------media query for less than 280 screen size----*/
 @media only screen and (max-width: 280px){
 /*-------Header design-------*/
-.header{
-    background: radial-gradient(white);
-}
-
-.header .logo{
-    width: 75px;
-    height: 37.5px;
-}
-
-.header .accountpic{
-    width: 15px;
-    height: 25px;	
-}
-
-.header .cartpic{
-    width: 15px;
-    height: 25px;
-}
-
 .header .row{
     margin-top: 70px;
 }
@@ -1008,10 +793,6 @@ nav ul li{
     margin-right: 20px;
 }
 
-#cart-pic{
-    right: 0%;
-}
-
 .menu-icon{
     width: 28px;
     margin-left: 20px;
@@ -1038,54 +819,13 @@ nav ul li{
     transform: translate(-50%);
 }
 
-.cartquantity{
-    background-color: #ff523b;
-    color: #fff;
-    padding: 2px 5px;
-    border-radius: 50%;
-    margin: -5px;
-}
-
 /*---------- About Page ------------*/
-.franceflag{
-    width: 250px;
-    height: 210px;
-}
 
-/*----------login-page------------*/
-.loginpage{
-    padding: 50px 0;
-}
-
-/*----------- Registration Page -----------*/
-#registration-btn{
-    width: 105px;
-    border: none;
-    cursor: pointer;
-}
-
-#registration-btn:focus{
-    outline: none;
-}
 }
 
 /*-------media query for less than 260 screen size----*/
 @media only screen and (max-width: 260px){
 /*-------Header design-------*/
-.header{
-background: radial-gradient(white);
-}
-
-.header .logo{
-width: 50px;
-height: 25px;
-}
-
-.header .cartpic{
-width: 20px;
-height: 30px;
-}
-
 .header .row{
 margin-top: 70px;
 }
@@ -1114,10 +854,6 @@ display: inline-block;
 margin-right: 20px;
 }
 
-#cart-pic{
-right: 0%;
-}
-
 .menu-icon{
 width: 28px;
 margin-left: 20px;
@@ -1144,64 +880,13 @@ left: 50%;
 transform: translate(-50%);
 }
 
-.cartquantity{
-background-color: #ff523b;
-color: #fff;
-padding: 2px 5px;
-border-radius: 50%;
-margin: -5px;
-}
-
 /*---------- About Page ------------*/
-.franceflag{
-width: 250px;
-height: 210px;
-}
 
-/*----------login-page------------*/
-.loginpage{
-    padding: 50px 0;
-    background: radial-gradient(#fff,#ffd6d6);
-}
-
-.formcontainer{
-    width: 80vw;
-}
-
-/*----------- Registration Page -----------*/
-#registration-btn{
-    width: 110px;
-    border: none;
-    cursor: pointer;
-}
-
-#registration-btn:focus{
-    outline: none;
-}
 }
 
 /*-------media query for less than 240 screen size----*/
 @media only screen and (max-width: 240px){
 /*-------Header design-------*/
-.header{
-background: radial-gradient(white);
-}
-
-.header .logo{
-width: 50px;
-height: 25px;
-}
-
-.header .accountpic{
-width: 15px;
-height: 20px;
-}
-
-.header .cartpic{
-width: 15px;
-height: 20px;
-}
-
 .header .row{
 margin-top: 70px;
 }
@@ -1230,10 +915,6 @@ display: inline-block;
 margin-right: 20px;
 }
 
-#cart-pic{
-right: 0%;
-}
-
 .menu-icon{
 width: 28px;
 margin-left: 20px;
@@ -1260,47 +941,6 @@ left: 50%;
 transform: translate(-50%);
 }
 
-.cartquantity{
-background-color: #ff523b;
-color: #fff;
-padding: 2px 5px;
-border-radius: 60%;
-margin: -5px;
-}
-
 /*---------- About Page ------------*/
-.franceflag{
-    width: 220px;
-    height: 200px;
-}
 
-/*----------login-page------------*/
-.loginpage{
-    padding: 50px 0;
-}
-
-form input{
-    width: 50%;
-    margin: 5px auto;
-}
-
-form .btn{
-    width: 100%;
-    margin: 10px 0;
-}
-
-#loginform{
-    width: 100%;
-    margin: 5px auto;
-    padding: 20px;
-}
-
-form a{
-    font-size: 12px;
-}
-
-/*----------- Registration Page -----------*/
-#registration-btn{
-    width: 110px;
-}
 }
